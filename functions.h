@@ -20,7 +20,7 @@ int getChampionPoints(enum CHAMPION);
 
 void printChampion(enum CHAMPION);
 
-void playRound(int, int, enum CHAMPION, int, enum CHAMPION, int);
+void playRound(int*, int*, enum CHAMPION, int, enum CHAMPION, int);
 
 
 #endif //FUNCTIONS_H
