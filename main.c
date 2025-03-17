@@ -16,12 +16,8 @@ int main(void) {
 		playRound(&p1_score, &p2_score, champ1, getChampionPoints(champ1), champ2, getChampionPoints(champ2));
 	}
 
-	if (p1_score > p2_score) {
-		printf("GAME OVER!!\nP1 won\n");
-	} else if (p2_score > p1_score) {
-		printf("GAME OVER!!\nP2 won\n");
-	} else {
-		printf("GAME OVER!!\nTIE\n");
-	}
+	(p1_score > p2_score && printf("GAME OVER!!\nP1 Won\n") ||
+		p1_score < p2_score && printf("GAME OVER!!\nP2 Won\n") ||
+		printf("GAME OVER!!\nTIE\n"));
 
 }
